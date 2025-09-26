@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 ¦ website layout html structure</title>
+    <style>
+        * {
+            color: saddlebrown;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 98%;
+            height: auto;
+            margin: 0px auto;
+            border: 2px solid saddlebrown;
+        }
+
+        #navigation {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        .leftlogo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .leftlogo img {
+            width: 4em;
+            height: 4em;
+            border: 2px solid saddlebrown;
+            margin-right: 10px;
+        }
+
+        li {
+            display: inline;
+            padding: 10px 20px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        #leftprojectlist ul li {
+
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #rightsideimage {
+            width: 800px;
+            height: 400px;
+            flex-direction: column;
+            border: 1px solid #ddd;
+            padding: 12px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border: 4px double saddlebrown;
+        }
+
+        .containerprojects {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #rightsideimage ul li img {
+            width: 800px;
+        }
+        #Articles{
+            padding: 10px 20px;
+            
+        }
+        #Articles p{
+            line-height: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container" id="Home">
+        <nav id="navigation">
+            <div class="leftlogo">
+                <img src="myphoto.jpg" alt="logo">
+                <h2>Yash Bhola</h2>
+            </div>
+            <div class="rightnav">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Articles">Articles</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="Projects">
+
+            <h1>My Projects</h1>
+
+            <div class="containerprojects">
+                <div id="leftprojectlist">
+                    <ul>
+                        <li><a href="#credifypyt">CredifyPyt</a></li>
+                        <li><a href="#checklist">checklist</a></li>
+                        <li><a href="#pokemongame">pokemongame</a></li>
+                        <li><a href="#loan">loan</a></li>
+                    </ul>
+                </div>
+                <div id="rightsideimage">
+                    <ul>
+                        <li id="credifypyt"><img src="credifypyt.jpg" alt="credifypyt"></li>
+                        <li id="checklist"><img src="checklistconverter.netlify.app_.png" alt="checklist"></li>
+                        <li id="pokemongame"><img src="pokemongame.jpg" alt="pokemongame"></li>
+                        <li id="loan"><img src="sbjloan.jpg" alt="loan"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id="Articles">
+            <h1>Articles</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sunt quas amet autem deserunt. Ipsum debitis assumenda impedit dignissimos similique optio? A fugiat voluptas eligendi, veritatis molestias exercitationem corporis expedita placeat ex non ab rerum ad dolores in neque, tenetur aliquid iste consequuntur illo cupiditate. Voluptatem autem a dolores sapiente nisi doloribus eveniet eum rem nemo deserunt earum ratione adipisci, corrupti perspiciatis repudiandae laboriosam possimus tempora minus! Error ad quia tempora ipsum facere accusamus suscipit repudiandae esse quae blanditiis architecto veniam reprehenderit nulla, consequuntur eveniet illo rerum cupiditate id iusto illum aliquid provident soluta quod? Ducimus voluptate esse laborum debitis!</p>
+        </section>
+<section id="contact">
+<form action="#">
+    <label for="name">name</label>
+    <input type="text" name="name" id="name"><br>
+    <label for="email">email</label>
+    <input type="email" name="email" id="email"><br>
+    <label for="msg">Message</label>
+    <textarea name="msg" id="msg"></textarea><br>
+    <input type="submit" value="submit">
+</form>
+</section>
+    </div>
+</body>
+
+</html>
